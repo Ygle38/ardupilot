@@ -1,0 +1,20 @@
+    3  git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+    5  sudo apt update
+    6  apt list --upgradable
+    7  sudo apt full-upgrade
+   12  sudo apt autoclean
+   35  ln -s /mnt/c/Users/yglan/Documents/GitHub/ardupilot .
+   37  cd ardupilot
+   45  sudo apt install gcc g++ ccache
+   48  sudo apt install binutils-arm-none-eabi
+   55  sudo apt install gcc-arm-none-eabi
+   56  apt list gcc-arm-none-eabi
+   58  sudo apt install make
+   64  sudo apt install python3-pip
+   72  pip install empy==3.3.4 --break-system-packages
+   76  sudo apt install python3-pexpect
+   98  ./waf --help
+   99  ./waf configure --list
+  100  ./waf configure --board SpeedyBeeF405WING  --extra-hwdef ./extra_hwdef.dat 
+  103  ./waf plane
+  106  history > _readme_compil_OLB
