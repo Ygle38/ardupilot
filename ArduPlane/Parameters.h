@@ -593,6 +593,10 @@ public:
 #if AP_PLANE_SYSTEMID_ENABLED
     AP_SystemID systemid;
 #endif
+
+#if AP_FUTABASBUS2_ENABLED
+    AP_FutabaSBUS2 futaba_sbus2;
+#endif
 };
 
 extern const AP_Param::Info var_info[];

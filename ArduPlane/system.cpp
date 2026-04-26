@@ -171,6 +171,10 @@ void Plane::init_ardupilot()
     g2.ice_control.init();
 #endif
 
+#if AP_FUTABASBUS2_ENABLED
+    g2.futaba_sbus2.init();
+#endif
+
 }
 
 #if AP_FENCE_ENABLED

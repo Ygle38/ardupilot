@@ -1290,6 +1290,10 @@ const AP_Param::GroupInfo ParametersG2::var_info[] = {
     AP_GROUPINFO("RNGFND_LND_DIST", 41, ParametersG2, rangefinder_land_engage_dist_m, 0),
 #endif
 
+#if AP_FUTABASBUS2_ENABLED
+    AP_SUBGROUPINFO(futaba_sbus2, "FS2_", 50, ParametersG2, AP_FutabaSBUS2),
+#endif
+
     AP_GROUPEND
 };
 

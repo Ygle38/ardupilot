@@ -144,6 +144,9 @@ const AP_Scheduler::Task Plane::scheduler_tasks[] = {
 #if AP_QUICKTUNE_ENABLED
     SCHED_TASK(update_quicktune, 40, 100, 163),
 #endif
+#if AP_FUTABASBUS2_ENABLED
+    SCHED_TASK_CLASS(AP_FutabaSBUS2, &plane.g2.futaba_sbus2, update, 50, 200, 166),
+#endif
 };
 
 void Plane::get_scheduler_tasks(const AP_Scheduler::Task *&tasks,

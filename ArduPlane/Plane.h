@@ -71,6 +71,10 @@
 
 #include <AP_Arming/AP_Arming.h>
 #include <AP_Frsky_Telem/AP_Frsky_Telem.h>
+#if AP_FUTABASBUS2_ENABLED
+#include <AP_FutabaSBUS2/AP_FutabaSBUS2.h>
+#endif
+
 #include <AP_OSD/AP_OSD.h>
 
 #include <AP_Rally/AP_Rally.h>

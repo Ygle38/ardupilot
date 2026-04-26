@@ -130,6 +130,8 @@ class ExtractFeatures(BuildScriptBase):
 
             ('AP_IBUS_TELEM_ENABLED', 'AP_IBus_Telem::init',),
 
+            ('AP_FUTABASBUS2_ENABLED', 'AP_FutabaSBUS2::init',),
+
             ('MODE_AUTOLAND_ENABLED', 'ModeAutoLand::update'),
             ('MODE_{type}_ENABLED', r'Mode(?P<type>.+)::init',),
             ('MODE_GUIDED_NOGPS_ENABLED', r'ModeGuidedNoGPS::init',),
